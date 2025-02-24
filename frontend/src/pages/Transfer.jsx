@@ -18,7 +18,7 @@ const Transfer = () => {
   const handleConfirm = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/v1/account/transfer",
+        "/api/v1/account/transfer",
         { to, amount: Number(amount) },
         { headers: { Authorization: `Bearer ${token}` } }
       );
